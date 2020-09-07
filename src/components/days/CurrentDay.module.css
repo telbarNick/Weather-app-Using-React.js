@@ -1,0 +1,56 @@
+.CurrentDay {
+    overflow: scroll;
+
+    padding: 25px;
+
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.CurrentDay::-webkit-scrollbar {
+    display: none;
+}
+
+.currDayBox {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.Icon {
+    width: 10vw;
+    min-width: 90px;
+}
+
+.degree {
+    font-size: 8vw;
+}
+
+.daySpan {
+    font-size: 1.5vw;
+    font-weight: 300;
+    text-align: center;
+}
+
+.daySpan p {
+    color: #ccc;
+}
+
+@media (max-width: 800px) {
+
+    .daySpan {
+        font-size: 1rem;
+    }
+
+    .Icon {
+        margin-left: -2rem;
+    }
+
+    .degree {
+        font-size: 11vw;
+    }
+}

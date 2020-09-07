@@ -1,0 +1,62 @@
+.Days {
+    flex-grow: 1;
+
+    box-sizing: border-box;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center;
+
+    transition: transform .2s linear;
+
+    font-size: 1vw;
+}
+
+.Icon {
+    width: 4.5vw;
+
+    margin: 0 auto;
+}
+
+.Nums {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.Nums::after {
+    content: '';
+    margin-left: -1rem;
+
+    width: 2rem;
+    height: .15rem;
+
+    background: rgba(41, 41, 41, 0.377);
+    border-radius: 7px;
+
+    position: absolute;
+    bottom: -.5rem;
+    left: 50%;
+}
+
+.daySpan {
+    font-weight: 300;
+    text-align: center;
+    color: #ccc;
+    margin: 0;
+}
+
+@media (max-width: 800px) {
+    .Days {
+        font-size: 1rem;
+    }
+
+    .Icon {
+        width: 11vw;
+    }
+}
