@@ -21,6 +21,8 @@ const CurrentDay = props => {
         dateTextHandler = () => {
             if (date.toString().slice(8,11)[0] === '0') {
                 return date.toString().slice(8,11)[1]
+            } else {
+                return date.toString().slice(8,11)
             }
          }
 
